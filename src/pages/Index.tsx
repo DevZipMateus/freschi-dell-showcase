@@ -1,6 +1,8 @@
+
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import EgestorERP from '@/components/EgestorERP';
 import About from '@/components/About';
 import Services from '@/components/Services';
 import Contact from '@/components/Contact';
@@ -102,6 +104,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <EgestorERP />
         <About />
         <Services />
         <Resources />
