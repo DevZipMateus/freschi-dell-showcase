@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, Instagram } from 'lucide-react';
 
@@ -31,7 +30,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/712137f7-ec5a-4482-b573-e1b8ee6624d7.png" 
                 alt="Freschi & Dell Contabilidade" 
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto"
               />
             </div>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
