@@ -1,0 +1,127 @@
+
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navigationItems = [
+    { href: '#inicio', label: 'Início' },
+    { href: '#sobre', label: 'Nossa História' },
+    { href: '#servicos', label: 'Serviços' },
+    { href: '#contato', label: 'Contato' },
+  ];
+
+  return (
+    <header className={cn(
+      "navbar-fixed transition-all duration-300",
+      isScrolled && "shadow-lg"
+    )}>
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between py-4">
+          {/* Logo */}
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-hero-gradient rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                <div className="w-4 h-4 bg-hero rounded-full"></div>
+              </div>
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-primary">Freschi & Dell</h1>
+              <p className="text-sm text-muted-foreground">Contabilidade</p>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navigationItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+
+          {/* Contact Info - Desktop */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <div className="flex items-center space-x-2 text-sm">
+              <Phone className="w-4 h-4 text-primary" />
+              <span>(51) 99565-2262</span>
+            </div>
+            <Button
+              asChild
+              className="btn-hero"
+            >
+              <a href="https://wa.me/5551995652262" target="_blank" rel="noopener noreferrer">
+                Falar Conosco
+              </a>
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </Button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t border-border">
+            <nav className="flex flex-col space-y-4">
+              {navigationItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-foreground hover:text-primary transition-colors font-medium py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
+                </a>
+              ))}
+              <div className="pt-4 space-y-3">
+                <div className="flex items-center space-x-2 text-sm">
+                  <Phone className="w-4 h-4 text-primary" />
+                  <span>(51) 99565-2262</span>
+                </div>
+                <div className="flex items-center space-x-2 text-sm">
+                  <Mail className="w-4 h-4 text-primary" />
+                  <span>contabilidade@freschidell.com</span>
+                </div>
+                <Button
+                  asChild
+                  className="btn-hero w-full"
+                >
+                  <a href="https://wa.me/5551995652262" target="_blank" rel="noopener noreferrer">
+                    Falar Conosco
+                  </a>
+                </Button>
+              </div>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
