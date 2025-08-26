@@ -26,7 +26,8 @@ const Header = () => {
 
   return (
     <header className={cn(
-      "navbar-fixed transition-all duration-300",
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+      "bg-[#02142c]",
       isScrolled && "shadow-lg"
     )}>
       <div className="container mx-auto px-4">
@@ -46,7 +47,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className="text-white hover:text-gray-300 transition-colors font-medium"
               >
                 {item.label}
               </a>
@@ -55,8 +56,8 @@ const Header = () => {
 
           {/* Contact Info - Desktop */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 text-sm">
-              <Phone className="w-4 h-4 text-primary" />
+            <div className="flex items-center space-x-2 text-sm text-white">
+              <Phone className="w-4 h-4 text-white" />
               <span>(51) 99565-2262</span>
             </div>
             <Button
@@ -73,7 +74,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden text-white hover:bg-white/10"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -82,25 +83,25 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-white/20">
             <nav className="flex flex-col space-y-4">
               {navigationItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium py-2"
+                  className="text-white hover:text-gray-300 transition-colors font-medium py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
               <div className="pt-4 space-y-3">
-                <div className="flex items-center space-x-2 text-sm">
-                  <Phone className="w-4 h-4 text-primary" />
+                <div className="flex items-center space-x-2 text-sm text-white">
+                  <Phone className="w-4 h-4 text-white" />
                   <span>(51) 99565-2262</span>
                 </div>
-                <div className="flex items-center space-x-2 text-sm">
-                  <Mail className="w-4 h-4 text-primary" />
+                <div className="flex items-center space-x-2 text-sm text-white">
+                  <Mail className="w-4 h-4 text-white" />
                   <span>contabilidade@freschidell.com</span>
                 </div>
                 <Button
