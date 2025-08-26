@@ -11,7 +11,17 @@ const Hero = () => {
   ];
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center hero-gradient overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/lovable-uploads/5ad16399-92e3-4cc5-b115-cef6758085ff.png')`
+        }}
+      >
+        <div className="absolute inset-0 hero-gradient opacity-90"></div>
+      </div>
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-20 h-20 bg-white rounded-full animate-float"></div>
