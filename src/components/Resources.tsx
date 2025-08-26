@@ -1,6 +1,7 @@
 
-import React from 'react';
-import { BookOpen } from 'lucide-react';
+import React, { useState } from 'react';
+import { BookOpen, X } from 'lucide-react';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const Resources = () => {
   const resources = [
@@ -66,20 +67,32 @@ const Resources = () => {
         {/* Resources Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-on-scroll">
           {resources.map((resource, index) => (
-            <div
-              key={resource.id}
-              className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {/* Image */}
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={resource.image}
-                  alt={`Recurso educativo ${resource.id}`}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-            </div>
+            <Dialog key={resource.id}>
+              <DialogTrigger asChild>
+                <div
+                  className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {/* Image */}
+                  <div className="relative h-64 overflow-hidden">
+                    <img
+                      src={resource.image}
+                      alt={`Recurso educativo ${resource.id}`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+              </DialogTrigger>
+              <DialogContent className="max-w-4xl w-full p-0">
+                <div className="relative">
+                  <img
+                    src={resource.image}
+                    alt={`Recurso educativo ${resource.id}`}
+                    className="w-full h-auto max-h-[80vh] object-contain"
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
 
