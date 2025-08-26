@@ -28,13 +28,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 bg-primary rounded-full"></div>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold">Freschi & Dell</h3>
-                <p className="text-sm text-primary-foreground/80">Contabilidade</p>
-              </div>
+              <img 
+                src="/lovable-uploads/712137f7-ec5a-4482-b573-e1b8ee6624d7.png" 
+                alt="Freschi & Dell Contabilidade" 
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
               A contabilidade que entende seu negócio. Ajudamos empresas a prosperar 

@@ -33,15 +33,11 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-hero-gradient rounded-full flex items-center justify-center">
-              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <div className="w-4 h-4 bg-hero rounded-full"></div>
-              </div>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-primary">Freschi & Dell</h1>
-              <p className="text-sm text-muted-foreground">Contabilidade</p>
-            </div>
+            <img 
+              src="/lovable-uploads/712137f7-ec5a-4482-b573-e1b8ee6624d7.png" 
+              alt="Freschi & Dell Contabilidade" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
