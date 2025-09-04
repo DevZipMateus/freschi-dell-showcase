@@ -8,7 +8,7 @@ const Resources = () => {
     {
       id: 1,
       image: '/lovable-uploads/dfedad68-9c2e-4530-8af8-247220175eea.png',
-      title: 'Certificado Digital',
+      title: 'EMITIMOS SEU CERTIFICADO DIGITAL',
       description: 'EMITIMOS SEU CERTIFICADO DIGITAL'
     },
     {
