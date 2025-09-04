@@ -9,7 +9,7 @@ const Resources = () => {
       id: 1,
       image: '/lovable-uploads/dfedad68-9c2e-4530-8af8-247220175eea.png',
       title: 'Certificado Digital',
-      description: 'Tudo sobre certificação digital para sua empresa'
+      description: 'EMITIMOS SEU CERTIFICADO DIGITAL'
     },
     {
       id: 2,
