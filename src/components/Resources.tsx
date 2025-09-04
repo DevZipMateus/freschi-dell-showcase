@@ -4,6 +4,23 @@ import { BookOpen, X } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const Resources = () => {
+  const [expandedItems, setExpandedItems] = useState<Set<number>>(new Set());
+
+  const toggleExpanded = (id: number) => {
+    const newExpanded = new Set(expandedItems);
+    if (newExpanded.has(id)) {
+      newExpanded.delete(id);
+    } else {
+      newExpanded.add(id);
+    }
+    setExpandedItems(newExpanded);
+  };
+
+  const truncateText = (text: string, maxLength: number = 150) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength) + '...';
+  };
+
   const resources = [
     {
       id: 1,
@@ -249,9 +266,26 @@ A decisão correta pode representar uma grande economia em impostos e maior saú
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
                       {resource.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {resource.description}
-                    </p>
+                    {resource.description && (
+                      <div className="text-gray-600 text-sm leading-relaxed">
+                        <p className="whitespace-pre-line">
+                          {expandedItems.has(resource.id) 
+                            ? resource.description 
+                            : truncateText(resource.description)}
+                        </p>
+                        {resource.description.length > 150 && (
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleExpanded(resource.id);
+                            }}
+                            className="text-primary hover:text-primary/80 font-semibold mt-2 text-xs"
+                          >
+                            {expandedItems.has(resource.id) ? 'Ler menos' : 'Ler mais'}
+                          </button>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </DialogTrigger>
