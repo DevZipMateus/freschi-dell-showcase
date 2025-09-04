@@ -9,55 +9,199 @@ const Resources = () => {
       id: 1,
       image: '/lovable-uploads/dfedad68-9c2e-4530-8af8-247220175eea.png',
       title: 'EMITIMOS SEU CERTIFICADO DIGITAL',
-      description: 'EMITIMOS SEU CERTIFICADO DIGITAL'
+      description: `🔹 1. Regime tributário
+
+"Qual regime é melhor para minha empresa: Simples Nacional, Lucro Presumido ou Lucro Real?"
+
+"Se eu mudar de regime, pago mais ou menos impostos?"
+
+🔹 2. Emissão de notas fiscais
+
+"Quando preciso emitir nota fiscal?"
+
+"Qual CFOP ou NCM devo usar?"
+
+"E se eu errar na emissão, posso corrigir depois?"
+
+🔹 3. Impostos e obrigações
+
+"Quais impostos minha empresa precisa pagar?"
+
+"Por que pago tanto imposto se vendo pouco?"
+
+"Quais são os prazos de entrega de declarações (DCTF, SPED, DEFIS etc.)?"
+
+🔹 4. Contratação de funcionários
+
+"Como registrar um funcionário corretamente?"
+
+"Quais encargos trabalhistas e previdenciários preciso pagar?"
+
+"Vale mais a pena CLT ou contratar como PJ?"
+
+🔹 5. Pró-labore e distribuição de lucros
+
+"Quanto devo definir como meu pró-labore?"
+
+"Posso retirar dinheiro da empresa sem pagar imposto?"
+
+"Qual a diferença entre pró-labore e distribuição de lucros?"
+
+🔹 6. Regularização e planejamento
+
+"Minha empresa está em débito com o Fisco, o que devo fazer?"
+
+"Como posso reduzir legalmente a carga tributária?"
+
+"Quais documentos preciso guardar e por quanto tempo?"
+
+📌 Conclusão
+
+As principais dúvidas giram em torno de redução de impostos, emissão de notas fiscais, obrigações trabalhistas e escolha do regime tributário.
+Por isso, um bom contador não apenas cumpre obrigações legais, mas atua como consultor estratégico, ajudando o empresário a tomar decisões que aumentam a lucratividade e reduzem riscos.`
     },
     {
       id: 2,
       image: '/lovable-uploads/624e861a-7f3d-47d8-a637-830dab17fa18.png',
       title: 'Guia Contábil',
-      description: 'Material educativo sobre práticas contábeis essenciais'
+      description: `A importância de escolher corretamente o CFOP nas vendas e o NCM
+
+No dia a dia das empresas, a correta classificação fiscal é fundamental para manter a conformidade com o Fisco e evitar problemas futuros. Dois códigos se destacam nesse processo: o CFOP (Código Fiscal de Operações e Prestações) e o NCM (Nomenclatura Comum do Mercosul).
+
+Apesar de muitas vezes passarem despercebidos, eles exercem um papel decisivo na emissão de notas fiscais, na apuração de impostos e até mesmo na precificação dos produtos.
+
+🔹 O papel do CFOP
+
+O CFOP é o código utilizado para identificar a natureza de uma operação, ou seja, qual é a finalidade da movimentação: venda, devolução, transferência, remessa para industrialização, entre outras.
+
+Define como a operação será tributada.
+
+Permite identificar se a movimentação é interna, interestadual ou de exportação.
+
+Impacta diretamente na forma como os impostos são destacados na nota fiscal.
+
+👉 Se um CFOP incorreto for utilizado, a empresa pode pagar impostos a mais, deixar de recolher valores devidos ou até ser autuada pelo Fisco.
+
+🔹 A importância do NCM
+
+Já o NCM é um código que classifica mercadorias em toda a região do Mercosul. Ele está presente em cada produto comercializado e tem como base o Sistema Harmonizado de Designação e Codificação de Mercadorias.
+
+Define a carga tributária de cada produto, como IPI, ICMS, PIS e COFINS.
+
+É essencial para a importação e exportação, permitindo identificar mercadorias de forma padronizada.
+
+Garante que a empresa esteja adequada à legislação fiscal e aduaneira.
+
+👉 Um NCM incorreto pode gerar multas, recolhimento indevido de impostos e até problemas em operações de comércio exterior.
+
+📌 Conclusão
+
+Escolher corretamente o CFOP e o NCM não é apenas uma exigência legal, mas uma forma de proteger a empresa contra autuações fiscais, recolhimentos indevidos e complicações contábeis.
+
+💡 Por isso, contar com o apoio de um contador especializado e realizar revisões periódicas na classificação fiscal são passos indispensáveis para manter a conformidade e a saúde financeira do negócio.`
     },
     {
       id: 3,
       image: '/lovable-uploads/16ae646d-6d2a-4600-b687-7155eb788358.png',
       title: 'Orientações Fiscais',
-      description: 'Informações importantes sobre obrigações fiscais'
+      description: 'CONTE COM NOSSOS SERVIÇOS PARA A CONFIGURAÇÃO CORRETA DO SEU SISTEMA'
     },
     {
       id: 4,
       image: '/lovable-uploads/4da0f481-59d4-40c8-a769-aab17a3cefb1.png',
       title: 'Manual Empresarial',
-      description: 'Guia completo para gestão empresarial'
+      description: 'CONTE CONOSCO!!!'
     },
     {
       id: 5,
       image: '/lovable-uploads/bac08049-d839-42b1-83d4-bc5eb15df87e.png',
-      title: 'Compliance Tributário',
-      description: 'Como manter sua empresa em conformidade'
+      title: 'EMITIMOS SEU CERTIFICADO DIGITAL',
+      description: ''
     },
     {
       id: 6,
       image: '/lovable-uploads/c1decb1e-6efd-4a2b-b6f3-afc493b34195.png',
       title: 'Legislação Atualizada',
-      description: 'Principais mudanças na legislação empresarial'
+      description: 'ENQUADRE SUA EMPRESA CONFORME SEU FATURAMENTO'
     },
     {
       id: 7,
       image: '/lovable-uploads/5d8789e7-1894-4a1c-acee-59ebc878b8f5.png',
       title: 'Gestão Financeira',
-      description: 'Dicas essenciais para controle financeiro'
+      description: 'MANTENHA O FISCAL EM DIA!'
     },
     {
       id: 8,
       image: '/lovable-uploads/47fb14a5-ac3c-4696-8308-5feaabb75c43.png',
-      title: 'Planejamento Tributário',
-      description: 'Estratégias para otimização fiscal'
+      title: 'QUAL CERTIFICADO ESCOLHER',
+      description: `QUAL CERTIFICADO ESCOLHER ?? Pois A diferença principal entre o certificado digital A1 e A3 está no local de armazenamento: o A1 é um arquivo eletrónico instalado num computador ou dispositivo móvel (com validade de 1 ano), enquanto o A3 é um dispositivo físico, como um cartão ou token (com validade de até 3 anos). O A1 é ideal para fácil mobilidade e uso em múltiplos dispositivos, mas o A3 é mais seguro, sendo preferido para transações sensíveis e com validade mais longa. 
+Certificado A1
+Armazenamento:
+É um ficheiro de software instalado diretamente no computador ou dispositivo móvel. 
+Acesso:
+Pode ser facilmente copiado e instalado em diversos dispositivos, oferecendo maior mobilidade. 
+Validade:
+Tem uma validade menor, geralmente de 1 ano. 
+Ideal para:
+Utilização em múltiplos dispositivos e para quem emite um grande número de documentos fiscais. 
+Certificado A3
+Armazenamento: É guardado num suporte físico, como um cartão com chip ou um token USB. 
+Acesso: Requer a utilização do dispositivo físico em cada computador, sendo menos versátil que o A1. 
+Validade: Tem uma validade mais extensa, podendo ser de 1, 2 ou 3 anos. 
+Segurança: Oferece maior segurança contra acessos não autorizados, sendo a escolha para transações de alto valor ou que exijam mais rigor. 
+Qual escolher?
+Para empresas com alta demanda de emissão de notas fiscais e uso em diversos computadores: O A1 é mais prático e versátil. 
+Para maior segurança em operações de dados sensíveis e transações de alto valor: O A3 é a opção mais segura. 
+Para acesso a sistemas públicos: Alguns sistemas, como os do TST, exigem o certificado A3. 
+A escolha entre o modelo A1 e A3 deve ser baseada nas necessidades específicas do negócio ou da pessoa física, considerando a segurança, a praticidade e o custo.`
     },
     {
       id: 9,
       image: '/lovable-uploads/ae3c7d33-3e59-44f1-8113-c75069265e9f.png',
-      title: 'Recursos Empresariais',
-      description: 'Ferramentas e recursos para sua empresa'
+      title: 'QUAL REGIME ADOTAR??',
+      description: `Qual regime tributário escolher para sua empresa?
+
+Na hora de abrir ou manter uma empresa, uma das decisões mais importantes é a escolha do regime tributário. Essa escolha impacta diretamente no valor dos impostos pagos, na burocracia do dia a dia e até na competitividade do negócio.
+
+No Brasil, existem três regimes principais: Simples Nacional, Lucro Presumido e Lucro Real. Entenda como funciona cada um e descubra qual pode ser o mais adequado para a sua empresa.
+
+🔹 Simples Nacional
+
+O Simples Nacional é voltado para micro e pequenas empresas, com faturamento de até R$ 4,8 milhões por ano.
+
+A grande vantagem é a unificação de vários impostos em uma única guia (DAS), simplificando o pagamento. Além disso, as alíquotas são progressivas e variam conforme o faturamento e a atividade exercida.
+
+👉 Ideal para empresas menores, que buscam praticidade e não possuem grandes despesas para abater.
+
+🔹 Lucro Presumido
+
+O Lucro Presumido pode ser utilizado por empresas com faturamento de até R$ 78 milhões por ano.
+
+Nesse regime, a Receita Federal presume a margem de lucro da empresa, que pode variar de 8% a 32% sobre o faturamento, dependendo da atividade. O imposto é calculado sobre essa base presumida, mesmo que o lucro real seja maior ou menor.
+
+👉 É vantajoso para empresas que têm margens de lucro elevadas, já que a tributação pode ser menor que no Lucro Real.
+
+🔹 Lucro Real
+
+O Lucro Real é obrigatório para grandes empresas e para segmentos específicos, como bancos e seguradoras, mas também pode ser escolhido por qualquer empresa.
+
+Aqui, os impostos são calculados sobre o lucro líquido efetivo (receitas menos despesas). Isso significa que, em períodos de prejuízo ou margens reduzidas, a carga tributária também diminui.
+
+👉 É o regime mais indicado para empresas com margens baixas ou que têm muitas despesas dedutíveis.
+
+📌 Conclusão
+
+Não existe um "melhor" regime tributário válido para todas as empresas. A escolha deve considerar:
+
+Faturamento anual
+
+Atividade exercida
+
+Margem de lucro
+
+Estrutura de custos
+
+A decisão correta pode representar uma grande economia em impostos e maior saúde financeira para o negócio.`
     }
   ];
 
