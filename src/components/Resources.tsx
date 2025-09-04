@@ -8,38 +8,56 @@ const Resources = () => {
     {
       id: 1,
       image: '/lovable-uploads/dfedad68-9c2e-4530-8af8-247220175eea.png',
+      title: 'Certificado Digital',
+      description: 'Tudo sobre certificação digital para sua empresa'
     },
     {
       id: 2,
       image: '/lovable-uploads/624e861a-7f3d-47d8-a637-830dab17fa18.png',
+      title: 'Guia Contábil',
+      description: 'Material educativo sobre práticas contábeis essenciais'
     },
     {
       id: 3,
       image: '/lovable-uploads/16ae646d-6d2a-4600-b687-7155eb788358.png',
+      title: 'Orientações Fiscais',
+      description: 'Informações importantes sobre obrigações fiscais'
     },
     {
       id: 4,
       image: '/lovable-uploads/4da0f481-59d4-40c8-a769-aab17a3cefb1.png',
+      title: 'Manual Empresarial',
+      description: 'Guia completo para gestão empresarial'
     },
     {
       id: 5,
       image: '/lovable-uploads/bac08049-d839-42b1-83d4-bc5eb15df87e.png',
+      title: 'Compliance Tributário',
+      description: 'Como manter sua empresa em conformidade'
     },
     {
       id: 6,
       image: '/lovable-uploads/c1decb1e-6efd-4a2b-b6f3-afc493b34195.png',
+      title: 'Legislação Atualizada',
+      description: 'Principais mudanças na legislação empresarial'
     },
     {
       id: 7,
       image: '/lovable-uploads/5d8789e7-1894-4a1c-acee-59ebc878b8f5.png',
+      title: 'Gestão Financeira',
+      description: 'Dicas essenciais para controle financeiro'
     },
     {
       id: 8,
       image: '/lovable-uploads/47fb14a5-ac3c-4696-8308-5feaabb75c43.png',
+      title: 'Planejamento Tributário',
+      description: 'Estratégias para otimização fiscal'
     },
     {
       id: 9,
       image: '/lovable-uploads/ae3c7d33-3e59-44f1-8113-c75069265e9f.png',
+      title: 'Recursos Empresariais',
+      description: 'Ferramentas e recursos para sua empresa'
     }
   ];
 
@@ -77,9 +95,19 @@ const Resources = () => {
                   <div className="relative h-64 overflow-hidden">
                     <img
                       src={resource.image}
-                      alt={`Recurso educativo ${resource.id}`}
+                      alt={resource.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      {resource.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {resource.description}
+                    </p>
                   </div>
                 </div>
               </DialogTrigger>
@@ -87,7 +115,7 @@ const Resources = () => {
                 <div className="relative">
                   <img
                     src={resource.image}
-                    alt={`Recurso educativo ${resource.id}`}
+                    alt={resource.title}
                     className="w-full h-auto max-h-[80vh] object-contain"
                   />
                 </div>
