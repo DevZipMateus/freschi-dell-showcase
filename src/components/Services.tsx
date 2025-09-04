@@ -7,7 +7,6 @@ import {
   Users, 
   Shield, 
   TrendingUp, 
-  Globe, 
   Award,
   Banknote,
   Building,
@@ -78,12 +77,6 @@ const Services = () => {
       title: 'Atendimento a MEIs',
       description: 'Apoio completo para microempreendedores individuais, desde a abertura até a gestão de tributos.',
       features: ['Abertura de MEI', 'DAS-MEI', 'DASN-SIMEI', 'Orientações específicas']
-    },
-    {
-      icon: Globe,
-      title: 'Importação e Exportação',
-      description: 'Orientação em obrigações fiscais e tributárias para operações de comércio exterior.',
-      features: ['Classificação fiscal', 'Drawback', 'Siscomex', 'Tributação de importação']
     },
     {
       icon: CheckCircle,
