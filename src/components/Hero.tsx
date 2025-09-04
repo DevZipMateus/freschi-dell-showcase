@@ -78,21 +78,6 @@ const Hero = () => {
               </Button>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-accent">500+</div>
-                <div className="text-sm text-white/80">Empresas Atendidas</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-accent">10+</div>
-                <div className="text-sm text-white/80">Anos de Experiência</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-accent">98%</div>
-                <div className="text-sm text-white/80">Clientes Satisfeitos</div>
-              </div>
-            </div>
           </div>
 
           {/* Visual Element */}
