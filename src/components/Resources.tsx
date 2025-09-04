@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { BookOpen, X } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
-import certificadoDigitalBanner from '@/assets/certificado-digital-banner.jpg';
 
 const Resources = () => {
   const resources = [
@@ -76,21 +75,21 @@ const Resources = () => {
                 >
                   {/* Image */}
                   <div className="relative h-64 overflow-hidden">
-                     <img
-                       src={resource.id === 1 ? certificadoDigitalBanner : resource.image}
-                       alt={resource.id === 1 ? 'Emitimos seu Certificado Digital' : `Recurso educativo ${resource.id}`}
-                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                     />
+                    <img
+                      src={resource.image}
+                      alt={`Recurso educativo ${resource.id}`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
                   </div>
                 </div>
               </DialogTrigger>
               <DialogContent className="max-w-4xl w-full p-0">
                 <div className="relative">
-                   <img
-                     src={resource.id === 1 ? certificadoDigitalBanner : resource.image}
-                     alt={resource.id === 1 ? 'Emitimos seu Certificado Digital' : `Recurso educativo ${resource.id}`}
-                     className="w-full h-auto max-h-[80vh] object-contain"
-                   />
+                  <img
+                    src={resource.image}
+                    alt={`Recurso educativo ${resource.id}`}
+                    className="w-full h-auto max-h-[80vh] object-contain"
+                  />
                 </div>
               </DialogContent>
             </Dialog>
